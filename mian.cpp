@@ -1,4 +1,4 @@
-// COMSC-210 | Lab 14 | Huiluan Yie
+// COMSC-210 | Lab 16 | Huiluan Yie
 
 #include <iostream>
 #include <iomanip>
