@@ -56,8 +56,10 @@ int main() {
     Color c1;
     cout << "\nThe 1st color:\n";
     c1.print();
-
     
+    Color c2(56);
+    cout << "\nThe 2nd color:\n";
+    c2.print();
 
     return 0;
 }
