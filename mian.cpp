@@ -12,6 +12,27 @@ class Color {
     int blue;
 
     public:
+    // constructors
+    Color() // default constructor
+    {
+        red = 0;
+        green = 0;
+        blue = 0;
+    }  
+    Color(int r) // partial constructor
+    {
+        red = r;
+        green = 0;
+        blue = 0;
+    }
+    Color(int r, int g, int b)  // full parameter constructor
+    {
+        red = r;
+        green = g;
+        blue = b;
+    }        
+
+
     // setter
     void set_red(int r)    { red = r; }
     void set_green(int g)  { green = g; }
@@ -32,24 +53,11 @@ class Color {
 
 int main() {
     // declarations
-    Color c1, c2, c3;
+    Color c1;
     cout << "\nThe 1st color:\n";
-    c1.set_red(255);
-    c1.set_green(0);
-    c1.set_blue(0);
     c1.print();
 
-    cout << "\nThe 2nd color:\n";
-    c2.set_red(17);
-    c2.set_green(69);
-    c2.set_blue(8);
-    c2.print();
-
-    cout << "\nThe 3rd color:\n";
-    c3.set_red(100);
-    c3.set_green(0);
-    c3.set_blue(50);
-    c3.print();
+    
 
     return 0;
 }
