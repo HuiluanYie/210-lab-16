@@ -13,35 +13,48 @@ class Color {
 
     public:
     // constructors
-    Color() // default constructor
-    {
+    Color() { // default constructor
         red = 0;
         green = 0;
         blue = 0;
-    }  
-    Color(int r) // partial constructor
-    {
+    }
+    Color(int r) { // partial constructor
         red = r;
         green = 0;
         blue = 0;
     }
-    Color(int r, int g, int b)  // full parameter constructor
-    {
+    Color(int r, int g) { // partial constructor
+        red = r;
+        green = g;
+        blue = 0;
+    }
+    Color(int r, int g, int b) { // full parameter constructor
         red = r;
         green = g;
         blue = b;
-    }        
-
+    }
 
     // setter
-    void set_red(int r)    { red = r; }
-    void set_green(int g)  { green = g; }
-    void set_blue(int b)   { blue = b; }
+    void set_red(int r) {
+        red = r;
+    }
+    void set_green(int g) {
+        green = g;
+    }
+    void set_blue(int b) {
+        blue = b;
+    }
 
     // getter
-    int get_red()   { return red; }
-    int get_green() { return green; }
-    int get_blue()  { return blue; }
+    int get_red() {
+        return red;
+    }
+    int get_green() {
+        return green;
+    }
+    int get_blue() {
+        return blue;
+    }
 
     // other methods
     void print() {
@@ -56,10 +69,18 @@ int main() {
     Color c1;
     cout << "\nThe 1st color:\n";
     c1.print();
-    
+
     Color c2(56);
     cout << "\nThe 2nd color:\n";
     c2.print();
+
+    Color c3(49, 61);
+    cout << "\nThe 3rd color:\n";
+    c3.print();
+
+    Color c4(89, 56, 130);
+    cout << "\nThe 4th color:\n";
+    c4.print();
 
     return 0;
 }
